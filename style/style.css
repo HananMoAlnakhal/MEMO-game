@@ -1,0 +1,234 @@
+:root{
+    --hot-ing:linear-gradient(135deg,
+    rgb(255, 17, 0)60%,rgb(175, 8, 8)70%);
+    --cold-ing:linear-gradient(135deg,
+    rgb(151, 224, 255)60%,rgb(28, 163, 225));
+    --normal-ing:linear-gradient(135deg,
+    lightcyan 60%,rgb(151, 224, 255)80%);
+    --green-ing:linear-gradient(135deg,
+    greenyellow 40%,green 80%);   
+    --not-active:rgb(0, 52, 107);
+    --COLOR:white; 
+}
+
+body{
+    background-color: rgb(12, 1, 1);
+    background-image: linear-gradient(160deg, rgb(0, 0, 0),rgb(35, 17, 21));
+    font-family: sans-serif;
+    margin: 0;
+    display:grid;
+    
+}
+.BegSection{
+    display: flex;
+    width:100%;
+    flex-direction: row;
+}
+.subSec{
+    width:calc(100% /3);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+h1{
+    display: flex;
+    color: lightcyan;
+    font-size: 70px;
+    text-align: left;
+    margin: 0;
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+    text-decoration: underline;
+    width:200px;
+}
+h2{
+    display: flex;
+    color: lightcyan;
+    font-size: 30px;
+    text-align: left;
+    margin: 0;
+    margin-top: 50px;
+    /* margin-bottom: 50px; */
+    text-decoration: underline;
+} 
+
+i{
+    margin-right: 10px;
+    font-size: larger;
+}
+button {
+    font-weight: bolder;
+    padding: 16px;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: transparent;
+    color:#fff;
+    
+  }
+.GameBody{
+    margin-top: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    width:400px;
+    justify-content: center;
+}
+.squer{
+    margin:10px;
+    height: 150;
+    color:#fff;
+    font-size: 40px;
+    width:150;
+    border-width: 5px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    /* border-style:double; */
+    /* border-top: 10px #fff;
+    border-left: pink; */
+    border-color:var(--COLOR)
+
+}
+.squer:hover{
+    /* background-color: var(--COLOR); */
+    border-color:var(--COLOR);
+    box-shadow: 0 0 10px var(--COLOR),
+    0 0 40px var(--COLOR);
+}
+
+.squer:active{
+    border-style:solid;
+    border-color:white;
+    background-color: var(--COLOR);
+    box-shadow: 0 0 10px var(--COLOR),
+    0 0 40px var(--COLOR);
+}
+
+.displaied{
+    border-style:solid;
+    border-color:white;
+    box-shadow: 0 0 10px var(--COLOR),
+    0 0 40px var(--COLOR);
+}
+.wrong:active{
+    border-style:solid;
+    border-color:white;
+    box-shadow: 0 0 10px var(--COLOR),
+    0 0 40px var(--COLOR);
+}
+.write:active{
+    border-style:solid;
+    border-color:white;
+    box-shadow: 0 0 10px var(--COLOR),
+    0 0 40px var(--COLOR);
+}
+button:disabled{
+    cursor: auto; 
+
+}
+/* .X::after{
+    content:" ✗ ";
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: var(--hot-ing) ;
+    border-color:aquamarine; 
+    
+}
+.O::after{
+    content: " O ";
+    font-family:"Ink free";
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: var(--green-ing);
+    border-color:aquamarine;   
+} */
+
+/* --------------------------------------------------------------------------------------------------
+.item{
+    transition:none;
+    cursor: pointer;
+    background-color:aliceblue;
+    background-image: var(--normal-ing);
+    color:rgb(0, 58, 74);
+    border-radius: 5px;
+    margin-top: 10px;
+    width: 150px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bolder;
+    font-size:medium; 
+    border: 2px solid antiquewhite;
+}*/
+.item-info{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color:rgb(255, 255, 255);        
+    font-weight: 900;
+    background-color: rgba(0, 0, 0, 0.698);
+    border-radius: 10px;
+    height: fit-content;
+    font-size: larger;
+    width: 150px;
+    height: 10px;
+    margin-bottom: 10px;
+}
+
+/* ----------Done---------------------------------- */
+.done{
+    /* transition: cubic-bezier(0.165, 0.84, 0.44, 1); */
+    color:rgb(132, 122, 176);
+    background-image: none;
+    background-image:linear-gradient(135deg,
+    rgb(0, 17, 33)60%,rgb(0, 52, 107));
+    border-radius: 10px; 
+    border-color:  rgb(0, 17, 33);
+    /* cursor:default; */
+    /* transition: all 1s linear(0 0%, 0 1.8%, 0.01 3.6%, 0.03 6.35%, 0.07 9.1%, 0.13 11.4%, 0.19 13.4%, 0.27 15%, 0.34 16.1%, 0.54 18.35%, 0.66 20.6%, 0.72 22.4%, 0.77 24.6%, 0.81 27.3%, 0.85 30.4%, 0.88 35.1%, 0.92 40.6%, 0.94 47.2%, 0.96 55%, 0.98 64%, 0.99 74.4%, 1 86.4%, 1 100%);
+     */
+}
+.done:hover{
+    color:aliceblue
+}
+.done:active{
+    border-color: aliceblue;
+}
+
+.done:disabled{
+    color:rgb(132, 122, 176);
+}
+.done:disabled:hover{
+    color:rgb(132, 122, 176);
+}
+.done:disabled:active{
+    border-color: rgb(0, 17, 33);
+}
+.selected{
+    border-color:  aliceblue;
+    color :aliceblue
+}
+.selected:active{
+    border-color:  aliceblue;
+}
+#history>li{
+    width:140px;
+}
+.message{
+    width:100%;
+    height:100%;
+    background-color: rgba(0, 0, 0, 0.615);
+    position:absolute;
+    z-index: 900;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.message-body{
+    background-image: var(--normal-ing);
+    border-radius: 10px;
+    padding:0 5% 0 5%;   
+}
